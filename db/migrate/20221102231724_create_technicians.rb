@@ -1,8 +1,7 @@
 class CreateTechnicians < ActiveRecord::Migration[7.0]
   def change
     create_table :technicians do |t|
-      t.string :Company
-      t.string :references
+      t.references :company, null: false, foreign_key: true
       t.string :first_name
       t.string :last_name
       t.string :email
