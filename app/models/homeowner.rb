@@ -1,3 +1,3 @@
 class Homeowner < ApplicationRecord
-    has_many :Homes
+    has_many :homes
 end

@@ -1,3 +1,3 @@
 class Company < ApplicationRecord
-    has_many :Technicians
+    has_many :technicians
 end

@@ -1,5 +1,5 @@
 class Technician < ApplicationRecord
-    belongs_to :Company
-    has_many :Job_tasks
-    has_many :Homes, through: :Job_tasks
+    belongs_to :company
+    has_many :job_tasks
+    has_many :homes, through: :job_tasks
 end
