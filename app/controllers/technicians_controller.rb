@@ -1,5 +1,9 @@
 class TechniciansController < ApplicationController
 
+    def index
+        render json: Technician.all
+    end
+    
     def create
         technician = Technician.create!(technician_params)
         render json: technician
